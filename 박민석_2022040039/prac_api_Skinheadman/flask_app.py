@@ -33,7 +33,7 @@ code = {
 def read_csv(code_request,sex_request):
     data = []
     count=0
-    with open("cb_statistics_populations.csv", "r", encoding="utf-8") as f:
+    with open("prac_api_Skinheadman\cb_statistics_populations.csv", "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             if row["시군"] == code[code_request]:
